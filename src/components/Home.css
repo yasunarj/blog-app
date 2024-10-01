@@ -1,0 +1,88 @@
+.postParent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.homePage {
+  width: 33%;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.homePage .postContents {
+  width: 420px;
+  height: auto;
+  max-height: 600px;
+  background-color: white;
+  box-shadow: 7px 6px 15px 2px #777777;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.postHeader h2 {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.postContents .postTextContainer {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  word-wrap: break-word;
+}
+
+.nameAndDeleteButton {
+  display: flex;
+  align-items: center;
+}
+
+.nameAndDeleteButton button {
+  user-select: none;
+  flex: 15%;
+  background-color: rgb(201, 96, 96);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 5px 6px 0px -2px #777777;
+  transition: all .3s;
+}
+
+.nameAndDeleteButton button:hover {
+  background-color: rgb(207, 65, 65);
+}
+
+.nameAndDeleteButton button:active {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+
+.nameAndDeleteButton h3 {
+  flex: 85%;
+}
+
+/* .nameAndDeleteButton button {
+  flex: 1;
+}
+
+.nameAndDeleteButton h3 {
+  flex: 9;
+} */
+
+@media (max-width: 1500px) {
+  .homePage {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .homePage {
+    width: 100%;
+  }
+}

@@ -1,0 +1,65 @@
+.createPostPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.postContainer {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+  width: 500px;
+  gap: 10px;
+  padding: 0px 40px;
+}
+
+.postContainer h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.inputPost input {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+.inputPost div {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.inputPost textarea {
+  width: 100%;
+  height: 120px;
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.postContainer button {
+  background-color: rgb(157, 119, 193);
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  width: 516px;
+  box-sizing: border-box;
+  box-shadow: 7px 6px 15px 2px #777777;
+  border: none;
+  transition: all .3s;
+}
+
+.postContainer button:hover {
+  background-color: rgb(130, 85, 173);
+}
+
+.postContainer button:active {
+  transform: translateY(5px);
+  box-shadow: 7px 6px 15px -5px #777777;
+}
